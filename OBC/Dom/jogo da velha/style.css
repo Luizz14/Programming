@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --bg-color: #1f1f1f;
+    --font-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.characters {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+    height: 100px;
+    background-color: #12416ee1;
+    backdrop-filter: blur(4px);
+}
+
+.container {
+    display: flex;
+    margin: 5rem auto;
+    padding: 3rem;
+    max-width: 60rem;
+    height: 600px;
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+.selectName {
+    width: 10rem;
+    
+    font-size: 1.5rem;
+    color: #f1f5f9;
+}
+
+.selectName input {
+    width: 150px;
+    height: 40px;
+}
+
+#buttonDone {
+    width: 200px;
+    height: 30px;
+}
+
+.player {
+    max-width: 100%;
+    margin: 0.2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #f1f5f9;
+}
+
+.startGame {
+    display: flex;
+    display: none;
+}
+
+.board {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #1f1f1f;
+}
+
+.square {
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    background-color: #252525;
+    transition: .2s;
+}
+
+.square {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #0194be;
+}
+
+.square:hover {
+    border: 2px solid rgba(17, 17, 146, 0.562);
+}
+
+.blockButton {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.blockButton:hover {
+    border: none;
+}
+
+.winButton {
+  background-color: #1f1f1f;
+  border: 2px solid green;
+}
+
+.flex {
+    display: flex;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background: #343434;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fff;
+  }
+  
+  .description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+  }
+  
+  .form div {
+    display: flex;
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+  }
+  
+  .form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+  }
+  
+  .form div input::placeholder {
+    color: rgb(216, 212, 212);
+  }
+  
+  .form div input:focus {
+    border: 1px solid rgb(99 102 241);
+  }
+  
+  .form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(99 102 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+  }

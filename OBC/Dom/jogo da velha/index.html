@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jogo da velha</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="characters">
+        <h2>Choose your name player one</h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <span class="title">Select your name player one</span>
+            <div>
+                <input placeholder="Enter your name" type="text" name="name" id="inputPlayerOne" autocomplete="off">
+                <button id="buttonDone">Subscribe</button>
+            </div>
+            <p class="description">And choose your color</p>
+        </div>
+        <div class="form">
+            <span class="title">Select your name player one</span>
+            <div>
+                <input placeholder="Enter your name" type="text" name="name" id="inputPlayerTwo" autocomplete="off">
+                <button id="buttonDone">Subscribe</button>
+            </div>
+            <p class="description">And choose your color</p>
+        </div>
+        <div class="startGame">
+            <div class="player one">
+                <h2>Player one</h2>
+                <h3 id="namePlayerOne"></h3>
+                <div id="scorePlayerOne">
+                    Points:
+                </div>
+            </div>
+            <div class="board">
+                <button class="square" id="0-0"></button>
+                <button class="square" id="0-1"></button>
+                <button class="square" id="0-2"></button>
+                <button class="square" id="1-0"></button>
+                <button class="square" id="1-1"></button>
+                <button class="square" id="1-2"></button>
+                <button class="square" id="2-0"></button>
+                <button class="square" id="2-1"></button>
+                <button class="square" id="2-2"></button>
+            </div>
+            <div class="player two">
+                <h2>Player two</h2>
+                <h3 id="namePlayerTwo"></h3>
+                <div id="scorePlayerTwo">
+                    Points:
+                </div>
+            </div>
+            <button id="btnReiniciar">Reiniciar</button>
+        </div>
+    </div>
+</body>
+</html>
