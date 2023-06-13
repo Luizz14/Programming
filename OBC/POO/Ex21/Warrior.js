@@ -10,10 +10,7 @@ class Warrior extends Caracter {
 
     attack(target) {
         if( this.position === 'Attack' ) {
-            let damage = this.strength - target.defense
-            damage <= 0 ? damage = 0 : damage 
-            
-            target.life -= damage
+            super.attack(target)
         }   
     }
 

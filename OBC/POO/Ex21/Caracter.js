@@ -1,4 +1,4 @@
-export class Caracter {
+class Caracter {
     constructor( name, life, strength, defense ) {
         this.name = name
         this.life = life
@@ -7,10 +7,7 @@ export class Caracter {
     }
 
     attack(target) {
-        let damage = this.strength - target.defense
-        damage <= 0 ? damage = 0 : damage 
-        
-        target.life -= damage
+        target.life -= this.attack - target.defense
     }
 }
 
@@ -20,3 +17,4 @@ const jubileia = new Caracter('Jubileia', 100, 10, 20)
 // lulu.attack(jubileia)
 
 // console.log(jubileia)
+module.export = Caracter

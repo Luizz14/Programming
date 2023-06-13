@@ -3,7 +3,6 @@ import { Caracter } from "./Caracter.js";
 class Mage extends Caracter{
     constructor( name, life, strength, defense, arcane ) {
         super( name, life, strength, defense )
-        
         this.arcane = arcane
     }
     
